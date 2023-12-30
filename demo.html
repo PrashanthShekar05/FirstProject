@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <h1 id="title">Restaurent Survey Form</h1>
+
+    <p id="description">Before you get started I want you to know that your assistance will be greatly appreciated.</p>
+    <form id="survey-form">
+        <div >
+            <label id="name-label">Name</label><br>
+            <input type="text"  id="name" placeholder="Enter your Name" required>
+    
+        </div>
+        <div>
+            <label id="email-label">Email</label><br>
+            <input type="email" id="email"  placeholder="Enter your Email Id" required>
+        </div>
+        <div>
+            <label id ="number-label">Age</label><br>
+          <input type="number" id="number" placeholder="Age" min="1" max="100">
+        </div>
+        
+        <div>
+            <label id ="select-label">Which is your favorite ?</label><br>
+            <select id="dropdown">
+                <option>Select any one  </option>
+                <option>Indian Cuisine</option>
+                <option>Mexican Cuisine</option>
+                <option>Vietnamese Cuisine</option>
+            </select>
+        </div>
+        <div>
+            <label> How was the Restaurent Food ?</label><br>  
+             <div ><label><input type="radio"name="food" class="inline">Good</label>
+             </div>
+             <div >
+             <label><input type="radio" name="food" class="inline" >Bad</label>
+            </div>
+            </div>
+           <div>
+            
+                <label> Which one these you liked most ? </label><br>  
+                 <div label><input type="checkbox"name="food" >Food </label>
+                 </div>
+                 <div >
+                 <label ><input type="checkbox" name="food"  >Ambiance</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="food"  >Customer Service </label>
+                   </div>
+                </div>
+               <div>
+           </div>
+           <div>
+            <label>Any other Suggestions ?</label><br>
+            <textarea type="text"></textarea>
+           </div>
+           <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
